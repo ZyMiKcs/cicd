@@ -39,3 +39,16 @@ jobs:
       # Шаг 5: Сборка проекта
       - name: Build project
         run: npm run build
+        
+      # Шаг 6: Генерация документации с TypeDoc
+      - name: Generate documentation
+        run: npm run generate-docs
+
+      # Шаг 7: Публикация документации на GitHub Pages
+      - name: Deploy documentation to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs  # Папка, куда генерируется документация
+          user_name: 'ZyMiKcs'  
+          user_email: 'zymik.official@gmail.com' 
