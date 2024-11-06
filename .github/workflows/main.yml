@@ -48,7 +48,7 @@ jobs:
       - name: Deploy documentation to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs  # Папка, куда генерируется документация
           user_name: 'ZyMiKcs'  
           user_email: 'zymik.official@gmail.com' 
