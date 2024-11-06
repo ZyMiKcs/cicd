@@ -1,0 +1,9 @@
+{
+	"out": "docs",              
+	"exclude": "**/*.test.ts",  
+	"includeVersion": true,      
+	"lang": "en",                
+	"theme": "default",          
+	"useTsLinkResolution": true 
+}
+  
