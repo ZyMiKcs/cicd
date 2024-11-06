@@ -31,7 +31,7 @@ jobs:
 
       # Шаг 4: Запускаем тесты
       - name: Run tests
-        run: npm test -- --watchAll=false
+        run: npm run test -- --watchAll=false
 
       # Шаг 5: Сборка проекта
       - name: Build project
