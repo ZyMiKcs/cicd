@@ -17,5 +17,5 @@ test("renders the correct initial state and increments count on button click", a
     await userEvent.click(button);
 
     // Проверяем, что значение увеличилось
-    expect(screen.getByText(/count is -1/i)).toBeInTheDocument();
+    expect(screen.getByText(/count is 1/i)).toBeInTheDocument();
 });
